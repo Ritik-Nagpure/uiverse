@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-light{
+  background-color: #f0f0f0;
+  color:#333333;
+}
+
+.heading-light{
+  color:#007bff;
+}
+
+.body-dark{
+  background-color: #070938;
+  color:#ffffff ;
+}
+
+.heading-dark{
+  color:#ffcc00;
+}
