@@ -1,4 +1,4 @@
-import send from "/Icons/send.svg";
+import send from "/h-Icons/send.svg";
 
 function sendMessage(){
   return (

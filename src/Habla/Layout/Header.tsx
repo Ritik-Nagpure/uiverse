@@ -1,6 +1,6 @@
-import favicon from "/App/favicon.svg";
-import profile from "/App/profile.svg";
-import settings from "/Icons/settings.svg"
+import favicon from "/h-App/favicon.svg";
+import profile from "/h-App/profile.svg";
+import settings from "/h-Icons/settings.svg"
 import Search from "../Components/Search";
 
 function Header() {
