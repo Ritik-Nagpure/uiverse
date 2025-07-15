@@ -1,4 +1,4 @@
-import search from "/h-Icons/search.svg";
+import search from "../../assets/h-Icons/search.svg";
 
 function Search(){
   return (

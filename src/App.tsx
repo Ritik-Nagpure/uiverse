@@ -1,33 +1,26 @@
 import './App.css'
+import Astrobit from './Astrobit/astrobit'
+import Codegears from './CodeGears/codegears'
+import Habla from './Habla/habla'
+import Kiracar from './Kiracar/kiracar'
+import Home from './LandingPage/Home/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-// import Projects  from './Projects/Projects'
-// import Astrobit from './Astrobit/astrobit'
-// import Habla from './Habla/habla.tsx'
-// import Astrobit from './Astrobit/astrobit.tsx'
-// import Kiracar from './Kiracar/kiracar.tsx'
-// import Codegears from './CodeGears/codegears.tsx'
 
-function App() {
+const App = () => {
   return (
-    <>
-    <h1 className='text-6xl text-red-300 font-bold'>Hello World</h1>;
-      {/* <div>
-       <div>
-          {/* <Projects /> 
-        </div>
-        <div className='bg-blue-500 p-10'>
-          Hello Wojdo bdjkn
-        </div>
-        <div className="text-3xl font-bold underline text-blue-500">
-          Hello Tailwind!
-        </div>
-      </div>
-      <Habla />
-      <Astrobit />
-      <Kiracar />
-      <Codegears /> */}
+    <div className='bg-purple-400 h-screen w-100%'>
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/uiverse/" element={<Home />} />
+          <Route path="/uiverse/Habla" element={<Habla />} />
+          <Route path="/uiverse/Astrobit" element={<Astrobit />} />
+          <Route path="/uiverse/Codegears" element={<Codegears />} />
+          <Route path="/uiverse/Kiracar" element={<Kiracar />} />
+        </Routes>
+      </BrowserRouter> */}
+    </div>
 
-    </>
   )
 }
 

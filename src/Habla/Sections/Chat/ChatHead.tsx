@@ -1,5 +1,5 @@
-import profile from "/h-App/profile.svg";
-import back from "/h-Icons/arrow-back.svg";
+import profile from "../../../assets/h-App/profile.svg";
+import back from "../../../assets/h-Icons/arrow-back.svg";
 
 function ChatHead() {
   return (

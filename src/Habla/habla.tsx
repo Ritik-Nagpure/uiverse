@@ -8,7 +8,7 @@ function Habla() {
 
     const favicon = document.querySelector("link[rel='icon']") as HTMLLinkElement | null;
     if (favicon) {
-      favicon.href = '/icons/hablaicon1.png'; 
+      favicon.href = '/icons/hablaicon1.png';
     }
   }, []);
 

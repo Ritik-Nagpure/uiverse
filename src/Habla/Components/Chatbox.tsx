@@ -1,5 +1,5 @@
 import type {userObject} from '../DummyData/chatusers'
-import emptyDP from '/h-Icons/emptyDP.svg'
+import emptyDP from '../../assets/h-Icons/emptyDP.svg'
 
 const Chatbox: React.FC<userObject> = ({name, message, image}) => 
   {

@@ -1,7 +1,7 @@
 import Layout from './GUI/Layout/Layout.tsx'
 import { useEffect } from 'react';
 
-function codegears() {
+function Codegears() {
      useEffect(() => {
         document.title = 'CodeGears';
     
@@ -17,4 +17,4 @@ function codegears() {
     )
 }
 
-export default codegears
+export default Codegears

@@ -1,4 +1,4 @@
-import Chatbox from "../../Components/Chatbox";
+import Chatbox from "../../Components/Chatbox.tsx";
 import { users } from "../../DummyData/chatusers.tsx";
 
 function ChatMenu() {

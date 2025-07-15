@@ -2,7 +2,7 @@ import Layout from "./Layout/Layout"
 import './astrocs.css'
 import { useEffect } from "react";
 
-function astrobit() {
+function Astrobit() {
      useEffect(() => {
         document.title = 'AstroBit';
     
@@ -19,4 +19,4 @@ function astrobit() {
     )
 }
 
-export default astrobit
+export default Astrobit

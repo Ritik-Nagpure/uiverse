@@ -4,7 +4,7 @@ import App from './App'
 
 function Layout() {
   return (
-    <div className="flex flex-col p-1 h-full">
+    <div className="flex flex-col p-1 h-full bg-blue-950 text-white">
       <div className="">
         <Header />
       </div>

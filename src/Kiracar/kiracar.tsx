@@ -1,7 +1,7 @@
 import Layout from './Layout/Layout'
 import { useEffect } from 'react';
 
-function kiracar() {
+function Kiracar() {
    useEffect(() => {
       document.title = 'Kiracar';
   
@@ -18,4 +18,4 @@ function kiracar() {
   )
 }
 
-export default kiracar
+export default Kiracar
