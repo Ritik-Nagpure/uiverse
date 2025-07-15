@@ -1,8 +1,17 @@
 import Projects from '../Projects/Projects'
+import { useState } from 'react';
+import Header from './Header';
 
 const Home = () => {
+    const [darkMode, setDarkMode] = useState(true);
+
+    const toggleMode = () => {
+        setDarkMode(prevMode => !prevMode);
+    }
+
     return (
-        <div className="bg-red-300 h-100% w-100%">
+        <div className={(darkMode ? "dark-mode" : "light-mode") + " h-screen"}>
+            <Header onToggle={toggleMode} darkMode={darkMode}/>
             <h1 className='text-6xl text-red-300 font-bold '>Hello World</h1>
             <div>
                 <div>
