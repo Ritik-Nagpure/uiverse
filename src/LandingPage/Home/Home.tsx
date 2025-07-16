@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Display from './Display';
-import LinkMaster from '../Projects/LinkMaster';
 
 
 const Home = () => {
@@ -20,14 +19,8 @@ const Home = () => {
             </div>
 
             <div className='w-full'>
-                <LinkMaster />
-            </div>
-
-            <div className='w-full'>
                 <Display />
             </div>
-
-
 
             <div className=''>
                 <Footer />

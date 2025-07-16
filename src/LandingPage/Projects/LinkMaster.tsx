@@ -35,10 +35,30 @@ const LinkMaster = () => {
     return (
         <div className="flex flex-row justifty-between items-center sm:p-5 sm:m-5 sm:h-150">
             <div className="w-1/6 h-full flex flex-col end justify-between items-center gap-4">
-                <button className={"cursor-pointer app-link-button" + displayApp === 0 && ""}  onClick={() => changeDisplay(0)}><span>Kiracar</span></button>
-                <button className="cursor-pointer app-link-button" onClick={() => changeDisplay(1)}>Astrobit</button>
-                <button className="cursor-pointer app-link-button" onClick={() => changeDisplay(2)}>Habla</button>
-                <button className="cursor-pointer app-link-button" onClick={() => changeDisplay(3)}>CodeGears</button>
+                <button className={"cursor-pointer app-link-button "} onClick={() => changeDisplay(0)}>
+                    <div className="flex flex-row h-full w-full items-center justify-start gap-2">
+                        {displayApp == 0 ? <p className="w-1/12 h-full selectedlinkapp"> &nbsp;</p> : ""}
+                        <span className="w-11/12 ">Kiracar</span>
+                    </div>
+                </button>
+                <button className={"cursor-pointer app-link-button "} onClick={() => changeDisplay(1)}>
+                    <div className="flex flex-row h-full w-full items-center justify-start gap-2">
+                        {displayApp == 1 ? <p className="w-1/12 h-full selectedlinkapp"> &nbsp;</p> : ""}
+                        <span className="w-11/12 ">Astrobit</span>
+                    </div>
+                </button>
+                <button className={"cursor-pointer app-link-button "} onClick={() => changeDisplay(2)}>
+                    <div className="flex flex-row h-full w-full items-center justify-start gap-2">
+                        {displayApp == 2 ? <p className="w-1/12 h-full selectedlinkapp"> &nbsp;</p> : ""}
+                        <span className="w-11/12 ">CodeGears</span>
+                    </div>
+                </button>
+                <button className={"cursor-pointer app-link-button "} onClick={() => changeDisplay(3)}>
+                    <div className="flex flex-row h-full w-full items-center justify-start gap-2">
+                        {displayApp == 3 ? <p className="w-1/12 h-full selectedlinkapp"> &nbsp;</p> : ""}
+                        <span className="w-11/12 ">Habla</span>
+                    </div>
+                </button>
             </div>
             <div className="w-5/6 h-full">
                 {createDisplayProject(displayApp)}
