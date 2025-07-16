@@ -1,8 +1,14 @@
 import { useState } from "react";
 import { projectDetails } from "./ProjectDetails";
+import { useNavigate } from "react-router-dom";
 import './LinkMaster.css';
 
 const LinkMaster = () => {
+    const nav = useNavigate()
+    const load_app = (applink: string) => {
+        nav(applink)
+    }
+
     const [displayApp, setDisplayApp] = useState(0);
 
     const changeDisplay = (index: number) => {
@@ -20,9 +26,7 @@ const LinkMaster = () => {
                     backgroundPosition: 'top',
                 }}>
                 <div className="absolute bottom-0 w-full sm:h-1/2 bg-black/30 text-white p-4 flex flex-col justify-end ">
-                    <a href={projectDetails[index].link}>
-                        <span className="text-6xl font-semibold">{projectDetails[index].title}</span>
-                    </a>
+                    <span className="text-6xl font-semibold" onClick={() => load_app(projectDetails[index].link)} >{projectDetails[index].title}</span>
                     <br />
                     <br />
                     <p className="text-lg overflow-hidden">{projectDetails[index].desc}</p>
