@@ -6,7 +6,8 @@ import F04 from './Errors/F04'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Staticspa from './CpSelf/Staticspa'
+import Staticspa from './CpSelf/ShowcaseGrid'
+import HomePage from './CpSelf/Homepage'
 
 const App = () => {
   return (
@@ -32,7 +33,8 @@ const App = () => {
           <Route path="/uiverse/*" element={<F04 />} />
         </Routes>
       </BrowserRouter> */}
-      <Staticspa />
+      {/* <Staticspa /> */}
+      <HomePage />
     </div>
 
   )
